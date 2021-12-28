@@ -20,8 +20,7 @@ The following example creates a security group and an application load balancer.
 provider "aws" {}
 
 module "networking" {
-  source  = "github.com/mongodb-ansible-roles/terraform-aws-networking-readonly"
-  version = "1.1.0"
+  source  = "github.com/mongodb-devprod-infrastructure/terraform-aws-networking-data-only"
 
   vpc_name = "tutorial-vpc"
 }
