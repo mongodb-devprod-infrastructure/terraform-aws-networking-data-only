@@ -1,6 +1,8 @@
 jobs:
   documentation:
     name: Run terraform-docs
+    needs:
+      - release
     runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v2
@@ -16,8 +18,6 @@ jobs:
           working-dir: .
   release:
     name: Run semantic-release
-    needs:
-      - documentation
     runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v2
