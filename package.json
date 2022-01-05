@@ -33,7 +33,8 @@
           ]
         }
       ]
-    ]
+    ],
+    "tagFormat": "${version}"
   },
   "scripts": {
     "prepare": "husky install"
