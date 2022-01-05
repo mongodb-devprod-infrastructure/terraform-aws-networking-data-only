@@ -1,3 +1,9 @@
+## [1.0.1](https://github.com/mongodb-devprod-infrastructure/terraform-aws-networking-data-only/compare/1.0.0...1.0.1) (2022-01-05)
+
+### Bug Fixes
+
+- lower strictness in AWS version constraint ([910d200](https://github.com/mongodb-devprod-infrastructure/terraform-aws-networking-data-only/commit/910d200b83f608633009de19936ff3cd49f799e8))
+
 # 1.0.0 (2022-01-05)
 
 ### Bug Fixes
