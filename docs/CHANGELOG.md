@@ -1,3 +1,9 @@
+## [1.0.3](https://github.com/mongodb-devprod-infrastructure/terraform-aws-networking-data-only/compare/1.0.2...1.0.3) (2022-05-27)
+
+### Bug Fixes
+
+- cast list to set for `for_each` directive ([94dc72a](https://github.com/mongodb-devprod-infrastructure/terraform-aws-networking-data-only/commit/94dc72a944469daae80df6b2bfa3df3d310c9482))
+
 ## [1.0.2](https://github.com/mongodb-devprod-infrastructure/terraform-aws-networking-data-only/compare/1.0.1...1.0.2) (2022-05-27)
 
 ### Bug Fixes
