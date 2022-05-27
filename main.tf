@@ -31,7 +31,7 @@ data "aws_subnets" "this" {
 }
 
 data "aws_subnet" "this" {
-  for_each = data.aws_subnets.this.ids
+  for_each = toset(data.aws_subnets.this.ids)
 
   id = each.value
 }
