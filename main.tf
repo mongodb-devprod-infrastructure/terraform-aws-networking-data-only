@@ -14,7 +14,7 @@ data "aws_vpc" "this" {
   state = "available"
 }
 
-data "aws_subnet_ids" "this" {
+data "aws_subnets" "this" {
   dynamic "filter" {
     for_each = length(data.aws_availability_zones.this.names) > 0 ? range(1) : range(0)
 
@@ -24,11 +24,14 @@ data "aws_subnet_ids" "this" {
     }
   }
 
-  vpc_id = data.aws_vpc.this.id
+  filter {
+    name   = "vpc-id"
+    values = [data.aws_vpc.this.id]
+  }
 }
 
 data "aws_subnet" "this" {
-  for_each = data.aws_subnet_ids.this.ids
+  for_each = data.aws_subnets.this.ids
 
   id = each.value
 }
