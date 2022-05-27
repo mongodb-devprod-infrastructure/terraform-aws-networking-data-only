@@ -1,3 +1,9 @@
+## [1.0.2](https://github.com/mongodb-devprod-infrastructure/terraform-aws-networking-data-only/compare/1.0.1...1.0.2) (2022-05-27)
+
+### Bug Fixes
+
+- replace aws_subnet_ids with aws_subnets ([f71c6e4](https://github.com/mongodb-devprod-infrastructure/terraform-aws-networking-data-only/commit/f71c6e47a61409ae6ace88820ee0794e4289ee21))
+
 ## [1.0.1](https://github.com/mongodb-devprod-infrastructure/terraform-aws-networking-data-only/compare/1.0.0...1.0.1) (2022-01-05)
 
 ### Bug Fixes
