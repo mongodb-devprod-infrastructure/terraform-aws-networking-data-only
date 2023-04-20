@@ -28,6 +28,11 @@ output "vpc_cidr_block" {
   value       = data.aws_vpc.this.cidr_block
 }
 
+output "vpc_cidr_blocks" {
+  description = "All CIDR ranges for this VPC"
+  value       = data.aws_vpc.this.cidr_block_associations[*].cidr_block
+}
+
 output "vpc_id" {
   description = "The ID of the VPC"
   value       = data.aws_vpc.this.id
