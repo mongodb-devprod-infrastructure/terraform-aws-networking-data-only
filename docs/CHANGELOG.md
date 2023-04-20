@@ -1,3 +1,9 @@
+# [1.2.0](https://github.com/mongodb-devprod-infrastructure/terraform-aws-networking-data-only/compare/1.1.0...1.2.0) (2023-04-20)
+
+### Features
+
+- added output for multiple cidrs ([#1](https://github.com/mongodb-devprod-infrastructure/terraform-aws-networking-data-only/issues/1)) ([83be3dd](https://github.com/mongodb-devprod-infrastructure/terraform-aws-networking-data-only/commit/83be3ddc1d4291a7d13aa613698498561605afd0))
+
 # [1.1.0](https://github.com/mongodb-devprod-infrastructure/terraform-aws-networking-data-only/compare/1.0.3...1.1.0) (2022-08-18)
 
 ### Features
